@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Document</title>
+    </head>
+
+    <div>
+        <div class="page-title  blue-grey lighten-3">
+            <h3>СК "Альфа-Гарант"</h3>
+        </div>
+
+        <section>
+
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Про компанию</div>
+                    <div class="collapsible-body"><span>ЄДРПОУ 32382598; р/р 2650430322201 ПАТ БАНК КРЕДИТ ДНІПРО м.
+                            Київ;
+                            МФО 305749; 01133, м. Київ, б-р Лесі Українки, 26;</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">account_balance_wallet</i>Финансы</div>
+                    <div class="collapsible-body">
+                        <span>
+                            <ul class="collection">
+                                <li class="collection-item">Кредитный счет 450 000.00 грн.</li>
+                                <li class="collection-item">Операционное обслуживание 0.00 грн.</li>
+                                <li class="collection-item">
+                                    Реальный счет -284 848.10 грн. 
+                                    <button class="btn-small btn">
+                                        <i class="material-icons">euro_symbol</i>
+                                    </button>
+                                </li>
+                                <li class="collection-item">Общий счет компании 165 151.90 грн.</li>
+                            </ul>
+                        </span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Операции</div>
+                    <div class="collapsible-body">
+                        <span>
+                            <ul class="collection">
+                                <li class="collection-item">
+                                    Вкл/Откл расчет <br/>
+                                    <p>
+                                        <label>
+                                          <input type="checkbox" checked="checked" />
+                                          <span>расчет</span>
+                                        </label>
+                                      </p>
+                                          
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+
+
+            <div class="collection">
+                <a href="#!" class="collection-item"><span class="badge">44 сотрудника.</span>Альфа-Гарант - Центральный
+                    офис</a>
+                <a href="#!" class="collection-item"><span class="badge">17 сотрудников.</span>Альфа-Гарант - Киевская
+                    дирекция</a>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        var el = document.getElementsByClassName('collapsible');
+        window.M.Collapsible.init(el[0]);
+    </script>
+    </body>
+
+</html>
