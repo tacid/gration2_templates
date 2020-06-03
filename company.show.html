@@ -1,35 +1,102 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link rel="stylesheet" href="index.css">
-        <title>Document</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
 
+
+<body>
     <div>
-        <div class="page-title  blue-grey lighten-3">
-            <h3>СК "Альфа-Гарант"</h3>
-        </div>
+        <div class="app-main-layout">
+            <nav class="navbar grey darken-1">
+                <div class="nav-wrapper">
+                    <div class="navbar-left">
+                        <a href="#">
+                            <i class="material-icons black-text">dehaze</i>
+                        </a>
+                        <a href="/" class="brand-logo" style="position: relative;">Gration</a>
+                    </div>
 
-        <section>
+                    <ul class="right hide-on-small-and-down">
+                        <li>
+                            <a class="dropdown-trigger black-text" href="#" data-target="dropdown">
+                                    USER NAME
+                                    <i class="material-icons right">arrow_drop_down</i>
+                                </a>
 
-            <ul class="collapsible">
+                            <ul id='dropdown' class='dropdown-content'>
+                                <li>
+                                    <a href="#" class="black-text">
+                                        <i class="material-icons">account_circle</i>Профиль
+                                    </a>
+                                </li>
+                                <li class="divider" tabindex="-1"></li>
+                                <li>
+                                    <a href="#" class="black-text">
+                                        <i class="material-icons">assignment_return</i>Выйти
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <ul class="sidenav app-sidenav open">
                 <li>
-                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Про компанию</div>
-                    <div class="collapsible-body"><span>ЄДРПОУ 32382598; р/р 2650430322201 ПАТ БАНК КРЕДИТ ДНІПРО м.
-                            Київ;
-                            МФО 305749; 01133, м. Київ, б-р Лесі Українки, 26;</span></div>
+                    <a href="./main.html" class="waves-effect waves-orange pointer">Главная</a>
                 </li>
                 <li>
-                    <div class="collapsible-header"><i class="material-icons">account_balance_wallet</i>Финансы</div>
-                    <div class="collapsible-body">
-                        <span>
+                    <a href="./company.index.html" class="waves-effect waves-orange pointer">Компания</a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect waves-orange pointer">Клиенты</a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect waves-orange pointer">Договора</a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect waves-orange pointer">Юзера</a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect waves-orange pointer">Аукционы</a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect waves-orange pointer">Расписание</a>
+                </li>
+                <li>
+                    <a href="#" class="waves-effect waves-orange pointer">Случаи</a>
+                </li>
+            </ul>
+
+            <main class="app-content">
+                <div class="app-page">
+
+                    <div>
+                        <div class="page-title  blue-grey lighten-3">
+                            <h3>СК "Альфа-Гарант"</h3>
+                        </div>
+
+                        <section>
+
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Про компанию</div>
+                                    <div class="collapsible-body"><span>ЄДРПОУ 32382598; р/р 2650430322201 ПАТ БАНК КРЕДИТ ДНІПРО м.
+                            Київ;
+                            МФО 305749; 01133, м. Київ, б-р Лесі Українки, 26;</span></div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">account_balance_wallet</i>Финансы</div>
+                                    <div class="collapsible-body">
+                                        <span>
                             <ul class="collection">
                                 <li class="collection-item">Кредитный счет 450 000.00 грн.</li>
                                 <li class="collection-item">Операционное обслуживание 0.00 грн.</li>
@@ -42,12 +109,12 @@
                                 <li class="collection-item">Общий счет компании 165 151.90 грн.</li>
                             </ul>
                         </span>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Операции</div>
-                    <div class="collapsible-body">
-                        <span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Операции</div>
+                                    <div class="collapsible-body">
+                                        <span>
                             <ul class="collection">
                                 <li class="collection-item">
                                     Вкл/Откл расчет <br/>
@@ -56,32 +123,51 @@
                                           <input type="checkbox" checked="checked" />
                                           <span>расчет</span>
                                         </label>
-                                      </p>
-                                          
+                                        </p>
+
                                 </li>
                             </ul>
-                        </span>
-                    </div>
-                </li>
-            </ul>
+                            </span>
+                            </div>
+                            </li>
+                            </ul>
 
 
 
-            <div class="collection">
-                <a href="#!" class="collection-item"><span class="badge">44 сотрудника.</span>Альфа-Гарант - Центральный
+                            <div class="collection">
+                                <a href="#!" class="collection-item"><span class="badge">44 сотрудника.</span>Альфа-Гарант - Центральный
                     офис</a>
-                <a href="#!" class="collection-item"><span class="badge">17 сотрудников.</span>Альфа-Гарант - Киевская
+                                <a href="#!" class="collection-item"><span class="badge">17 сотрудников.</span>Альфа-Гарант - Киевская
                     дирекция</a>
-            </div>
+                            </div>
 
-        </section>
+                        </section>
+                    </div>
+
+                </div>
+            </main>
+
+
+        </div>
     </div>
 
+
+    <footer class="page-footer grey darken-1">
+
+        <div class="footer-copyright">
+            <div class="container">
+                © Copyright © 2010-2020 "GSS GROUPE". Все права защищены. Gration ver. 2.0.1.
+                <a class="grey-text text-lighten-4 right" href="#!">| Сбросить кеш </a>
+                <a class="grey-text text-lighten-4 right" href="#!">| Стастика </a>
+                <a class="grey-text text-lighten-4 right" href="#!">| Панель Администратора </a>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         var el = document.getElementsByClassName('collapsible');
         window.M.Collapsible.init(el[0]);
     </script>
-    </body>
+</body>
 
 </html>
